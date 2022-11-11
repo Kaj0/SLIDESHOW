@@ -15,6 +15,7 @@ header{
 h1{
     width: fit-content;
     margin: auto;
+    font-size: 24px;
 }
 main{
     height: 100vh;
@@ -45,6 +46,7 @@ img{
 
 }
 button{
+    padding: 5px 10px;
     height: fit-content;
     cursor: pointer;
     background: black;
@@ -77,4 +79,45 @@ p{
     position: fixed;
     bottom: 1%;
     left: 45%;
+}
+
+@media screen and (max-width:900px){
+    h1{
+        font-size: 18px;
+    }
+    .container{
+        max-width: 650px;
+        height: 350px;
+    }
+    .slide{
+        height: 350px;
+       
+    }
+    
+}
+@media screen and (max-width:750px){
+    button{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .container{
+        max-width: 5500px;
+        height: 315px;
+    }
+    .slide{
+        height: 315px;
+       
+    }
+    
+}
+@media screen and (max-width:600px){
+    .container{
+        max-width: 400px;
+        height: 250px;
+    }
+    .slide{
+        height: 250px;
+       
+    }
+    
 }
